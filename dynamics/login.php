@@ -7,11 +7,12 @@
     echo "<br>";
     echo "<br>";
     // echo "<form action='' method='post'>";
-    // echo "<form action="" method="post" target="_blank" autocomplete="on">
-    //     <fieldset>
-    //     <legend>Movimientos</legend>
-    //     </fieldset>
-    // </form>
-    // ";
+    // action="" method="post" target="_blank" autocomplete="on"
+    echo "<form>
+        <fieldset>
+        <legend>Movimientos</legend>
+        </fieldset>
+    </form>
+    ";
 
 ?>
