@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movimientos</title>
-    <link rel="stylesheet" href="./statics/styles/movimientos.css">
+    <link rel="stylesheet" href="../statics/styles/movimientos.css">
 </head>
 <body>
     <?php
 
-
         if(isset($_POST['Submit']))
- 
+
         {
             $accion = $_POST['accion'];
             echo "El usuario ha elegido: <b> $accion </b>";
@@ -24,7 +23,7 @@
                                 <input type="text" name="name"><br>
                                 <input type="submit" name="submit" value="Submit Form"><br>
                                 <!-- otro formulario para pedir el nombre (se podría hacer en otra página o en la de crear, solo direccionando)
-                                 pero ya así funciona -->
+                                pero ya así funciona -->
                             </form>
                         <?php
                         echo "<br> <br> <br>";
@@ -38,17 +37,17 @@
                         break;
             }
         }
- 
+
     ?>
- 
+
         <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
- 
+
         <label for='accion' >Movimiento:<br>
                     <input type='radio' name='accion' value='Crear' checked>Crear archivo<br>
                     <input type='radio' name='accion' value='Renombrar'>Renombrar archivo<br>
                     <input type='radio' name='accion' value='Eliminar'>Eliminar archivo<br>
         </label>
- 
+
         <input type="Submit" name="Submit" value="Submit"><br> 
 
         </form>
