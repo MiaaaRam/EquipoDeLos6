@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../statics/styles/crear.css">
 </head>
-<body>
+<body id="bodytres">
     <?php 
         $arch=(isset($_POST['name']) && $_POST["name"] != "")? $_POST['name'] : "Falta Valor"; //recibe nombre del archivo
         echo "Hola <br>"; //mensaje de entrada

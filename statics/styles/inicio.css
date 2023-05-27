@@ -5,4 +5,14 @@
     font-family: 'Raleway', sans-serif;
 }
 /* ==============INDEX===================================================================== */
-/* ============ */
+/* ======ID'S====== */
+#login{
+    display: block;
+    background-color: rgba(110, 130, 219, 0.438);
+    border-radius: 2rem;
+    margin-left: 38rem;
+    margin-top: 2rem;
+    margin-right: 38rem;
+    margin-bottom: 2rem;
+}
+

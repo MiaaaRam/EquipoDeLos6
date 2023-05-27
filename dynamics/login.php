@@ -7,9 +7,9 @@
     <title>Movimientos</title>
     <link rel="stylesheet" href="../statics/styles/movimientos.css">
 </head>
-<body>
+<body id="bodytwo">
     <?php
-
+        
         if(isset($_POST['Submit']))
 
         {
@@ -51,6 +51,7 @@
         <input type="Submit" name="Submit" value="Submit"><br> 
 
         </form>
+        
 </body>
 </html>
 
