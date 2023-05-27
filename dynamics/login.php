@@ -44,22 +44,27 @@
         }
 
     ?>
-
+    </span>
+    
         <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+            <span id="bodyfour">
+                <br>
+                <br>
+                <label for='accion' >Movimiento:<br>
+                            <input type='radio' name='accion' value='Crear' checked>Crear archivo<br>
+                            <input type='radio' name='accion' value='Renombrar'>Renombrar archivo<br>
+                            <input type='radio' name='accion' value='Eliminar'>Eliminar archivo<br>
+                </label>
 
-        <label for='accion' >Movimiento:<br>
-                    <input type='radio' name='accion' value='Crear' checked>Crear archivo<br>
-                    <input type='radio' name='accion' value='Renombrar'>Renombrar archivo<br>
-                    <input type='radio' name='accion' value='Eliminar'>Eliminar archivo<br>
-        </label>
-
-        <input type="Submit" name="Submit" value="Submit"><br> 
-
+                <input type="Submit" name="Submit" value="Submit"><br> 
+                <br>
+                <br>
+            </span>
         </form>
         <br>
         <br>
         <br>
-    </span>
+    
     <br>
     <br>
     <br>
