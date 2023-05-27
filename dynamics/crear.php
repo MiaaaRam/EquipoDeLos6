@@ -9,9 +9,11 @@
 </head>
 <body id="bodytres">
     <?php 
+        //$nombre = (isset($_POST['nombre']) && $_POST["nombre"] !="")? $_POST['nombre'] : "No especifico";//para recibir el nombre del usuario pero sale no especifico pipipi
         $arch=(isset($_POST['name']) && $_POST["name"] != "")? $_POST['name'] : "Falta Valor"; //recibe nombre del archivo
         echo "Hola <br>"; //mensaje de entrada
-        echo $arch."<br>"; //te dice q puso el usuario
+        echo "Archivo  <strong>" .$arch. "</strong> creado por  nombre de la casa  tal <br>"; //te dice quien y que creo
+        //echo $arch."<br>"; //te dice q puso el usuario
 
         $fp = fopen($arch,"w+"); //lo crea
         if($fp == false) { 

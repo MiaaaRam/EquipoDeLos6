@@ -9,7 +9,8 @@
 </head>
 <body id="bodytwo">
     <?php
-        
+        $nombre = (isset($_POST['nombre']) && $_POST["nombre"] !="")? $_POST['nombre'] : "No especifico";
+
         if(isset($_POST['Submit']))
 
         {
