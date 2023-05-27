@@ -1,0 +1,3 @@
+<?php
+    echo "A continuacion se muestran los movimientos en Oh!Myexplorer";
+?>

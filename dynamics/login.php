@@ -52,7 +52,11 @@
         <input type="Submit" name="Submit" value="Submit"><br> 
 
         </form>
-        
+    <br>
+    <br>
+    <br>
+    <!--<a href="../dynamics/viewregistro.php">Ver los registros </a>
+    intento de registros que no funciono pipipi-->
 </body>
 </html>
 
