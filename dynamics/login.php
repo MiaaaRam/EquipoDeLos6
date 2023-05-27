@@ -7,7 +7,11 @@
     <title>Movimientos</title>
     <link rel="stylesheet" href="../statics/styles/movimientos.css">
 </head>
-<body id="bodytwo">
+<body>
+    <span id="bodytwo" align="center">
+        <br>
+        <br>
+        <br>
     <?php
         $nombre = (isset($_POST['nombre']) && $_POST["nombre"] !="")? $_POST['nombre'] : "No especifico";
 
@@ -52,6 +56,10 @@
         <input type="Submit" name="Submit" value="Submit"><br> 
 
         </form>
+        <br>
+        <br>
+        <br>
+    </span>
     <br>
     <br>
     <br>
