@@ -10,6 +10,36 @@
     </head>
     <body>
     
+<form TARGET='_blank' method='post' action="<?php echo $_SERVER['PHP_SELF']; ?>">
+             <fieldset>
+            <legend>Ingresa los siguientes datos para renombrar a tu archivo</legend>
+                    <label>Nombre actual del txt :
+                        <input type='text' name='nombreviejo' id='nombreviejo'>
+                   </label>
+                    <br>
+                    <label>Nombre nuevo para el txt(ruta completa con el .txt):
+                        <input type='text' name='nombrenuevo' id='nombrenuevo'>
+                    </label>
+                      <br>
+                    <br>
+                    <label>
+                        <input type='submit' value='Enviar'>
+                    </label>
+               </fieldset>
+</form>
+<?php 
+        $nviejo = $_POST['nombreviejo'];
+        $nnuevo = $_POST['nombrenuevo'];
+        if(isset($nnuevo)) 
+        {
+            rename ("../newArch/$nviejo", "../newArch/$nnuevo");
+            echo "Listo, vuelve pronto :)";
+        }
+        else
+        {
+            echo "Algo a salido mal, intentalo de nuevo y recuerda llenar correctamente el formulario";
+        }
+    ?>z
         <h1> renombrar</h1>
         <a href="./login.php">volver</a>
     </body>
