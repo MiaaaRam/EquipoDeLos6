@@ -12,7 +12,7 @@
     $nombre = (isset($_POST["nombre"]) && $_POST["nombre"] !="")? $_POST["nombre"] : "No especifico";
 
 
-    echo "<br>Hola " .$_POST["nombre"]. " elige el movimiento que deseas realizar:";
+    echo /*"<br>Hola " .$_POST["nombre"].*/ " elige el movimiento que deseas realizar:";
 
     echo "<br>";
     echo "<br>";
