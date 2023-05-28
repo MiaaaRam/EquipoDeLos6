@@ -12,11 +12,7 @@ body{
     border-radius: 2rem;
     border-style: solid;
     border-color: rgb(110, 185, 219);
-    border-width: .5rem;
-    margin-left: 38rem;
-    margin-top: 2rem;
-    margin-right: 38rem;
-    margin-bottom: 2rem;
+   
 }
 #bodyfour{
     display: block;
@@ -24,9 +20,5 @@ body{
     border-radius: 2rem;
     border-style: solid;
     border-color: rgb(110, 185, 219);
-    border-width: .5rem;
-    margin-left: 38rem;
-    margin-top: 2rem;
-    margin-right: 38rem;
-    margin-bottom: 2rem;
+ 
 }

@@ -1,3 +1,7 @@
+<?php  
+session_start();
+unset($_SESSION["nombre"])
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>oh!myexplorer</title>
-    <link rel="stylesheet" href="./statics/styles/inicio.css">
+    <link rel="stylesheet" href="../statics/styles/inicio.css">
 </head>
 <body>
-        <form action="./dynamics/login.php"  method="post" target="_blank" autocomplete="on">
+        <form action="login.php"  method="post" target="_blank" autocomplete="on">
             <br>
             <br>
             <br>

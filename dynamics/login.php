@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,45 +11,18 @@
     <link rel="stylesheet" href="../statics/styles/movimientos.css">
 </head>
 <body>
+<?php $nombre = (isset($_POST['nombre']) && $_POST["nombre"] !="")? $_POST['nombre'] : ". . .   Quien eres?";
+$_SESSION["nombre"] = $nombre;
+?>
     <span id="bodytwo" align="center">
         <br>
+        <h1>Hola <?=$_SESSION["nombre"]?> </h1>
         <br>
         <br>
-    <?php
-        $nombre = (isset($_POST['nombre']) && $_POST["nombre"] !="")? $_POST['nombre'] : "No especifico";
-
-        if(isset($_POST['Submit']))
-
-        {
-            $accion = $_POST['accion'];
-            echo "El usuario ha elegido: <b> $accion </b>";
-            switch ($accion){
-                case "Crear";
-                        echo "<br> <br> <br> Introduce el nombre y ruta del archivo"; //mensaje de entrada
-                        ?>
-                            <form method="post" action="crear.php">
-                                <input type="text" name="name"><br>
-                                <input type="submit" name="submit" value="Submit Form"><br>
-                                <!-- otro formulario para pedir el nombre (se podría hacer en otra página o en la de crear, solo direccionando)
-                                pero ya así funciona -->
-                            </form>
-                        <?php
-                        echo "<br> <br> <br>";
-                        break;
-                        // espacio para las otras coniciones
-                case "Renombrar";
-                        echo "entró renombre";
-                        break;
-                case "Eliminar";
-                        echo "entró eliminar";
-                        break;
-            }
-        }
-
-    ?>
+   
     </span>
     
-        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <form method="post" action="./acciones.php">
             <span id="bodyfour">
                 <br>
                 <br>
