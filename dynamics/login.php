@@ -11,9 +11,7 @@ session_start();
     <link rel="stylesheet" href="../statics/styles/movimientos.css">
 </head>
 <body>
-<?php $nombre = (isset($_POST['nombre']) && $_POST["nombre"] !="")? $_POST['nombre'] : ". . .   Quien eres?";
-$_SESSION["nombre"] = $nombre;
-?>
+
     <span id="bodytwo" align="center">
         <br>
         <h1>Hola <?=$_SESSION["nombre"]?> </h1>

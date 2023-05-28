@@ -1,6 +1,6 @@
 <?php  
 session_start();
-unset($_SESSION["nombre"])
+unset($_SESSION["nombre"]);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,7 @@ unset($_SESSION["nombre"])
     <link rel="stylesheet" href="../statics/styles/inicio.css">
 </head>
 <body>
-        <form action="login.php"  method="post" target="_blank" autocomplete="on">
+        <form action="./acciones.php"  method="post" target="_blank" autocomplete="on">
             <br>
             <br>
             <br>
