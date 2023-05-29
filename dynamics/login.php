@@ -9,7 +9,7 @@ if($_SESSION["var"] != 1) header("Location: ./inicio.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movimientos</title>
-    <link rel="stylesheet" href="../statics/styles/movimientos.css">
+    <link rel="stylesheet" href='../statics/styles/<?=$_SESSION["casa"]?>.css'>
 </head>
 <body>
 
@@ -43,6 +43,7 @@ if($_SESSION["var"] != 1) header("Location: ./inicio.php");
     <br>
     <br>
     <br>
+    <a href="./inicio.php">salir</a>
     <!--<a href="../dynamics/viewregistro.php">Ver los registros </a>
     intento de registros que no funciono pipipi-->
 </body>

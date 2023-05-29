@@ -1,0 +1,24 @@
+/* ==================FONTS========================== */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap');
+/* ==============ETIQUETAS================== */
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(107, 87, 63, 0.438);
+}
+/* ======ID'S====== */
+#bodytwo{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: rgb(120, 93, 66);
+   
+}
+#bodyfour{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: rgb(109, 81, 59);
+ 
+}

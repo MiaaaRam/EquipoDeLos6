@@ -37,8 +37,8 @@ $_SESSION["var"] = 0;
                     <br>
                     <br>
                     <label for="casa">¿Cuál es tú casa?</label><br><br>
-                    <select>
-                        <option value="Ajolotes">Ajolotes</option>
+                    <select name="casa">
+                        <option value="Ajolotes" >Ajolotes</option>
                         <option value="Teporingos">Teporingos</option>
                         <option value="Halcones">Halcones</option>
                     </select>

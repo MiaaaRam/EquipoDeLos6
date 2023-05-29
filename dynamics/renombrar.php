@@ -10,7 +10,7 @@ if($_SESSION["var"] != 1) header("Location: ./inicio.php");
         <title>hola</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+         <link rel="stylesheet" href='../statics/styles/<?=$_SESSION["casa"]?>.css'>
     </head>
     <body>
     
