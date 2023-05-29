@@ -7,8 +7,9 @@ if($_SESSION["var"] == 0)
 {
     $nombre = (isset($_POST['nombre']) && $_POST["nombre"] !="")? $_POST['nombre'] : ". . .   Quien eres?";
     $_SESSION["nombre"] = $nombre;
-    header("Location: ./login.php");
     $_SESSION["var"] = 1;
+    header("Location: ./login.php");
+    
 }
 else{
 $accion = (isset($_POST['accion']) && $_POST["accion"] !="")? $_POST['accion'] : false;

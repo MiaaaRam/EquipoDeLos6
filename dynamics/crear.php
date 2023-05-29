@@ -1,5 +1,6 @@
 <?php
 session_start();
+if($_SESSION["var"] != 1) header("Location: ./inicio.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +19,7 @@ session_start();
         <br>
 
      <h2>         
-     Introduce el nombre y ruta del archivo a crear
+     Introduce el nombre 
 </h2>         
                           <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                                 <input type="text" name="name"><br>

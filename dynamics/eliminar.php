@@ -1,5 +1,7 @@
 <?php
 session_start();
+if($_SESSION["var"] != 1) header("Location: ./inicio.php");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

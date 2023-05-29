@@ -1,3 +1,7 @@
+<?php
+session_start();
+if($_SESSION["var"] != 1) header("Location: ./inicio.php");
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -39,8 +43,9 @@
         {
             echo "Algo a salido mal, intentalo de nuevo y recuerda llenar correctamente el formulario";
         }
-    ?>z
+    ?>
         <h1> renombrar</h1>
         <a href="./login.php">volver</a>
     </body>
+
 </html>
