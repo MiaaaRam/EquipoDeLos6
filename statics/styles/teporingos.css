@@ -3,7 +3,7 @@
 /* ==============ETIQUETAS================== */
 body{
     font-family: 'Raleway', sans-serif;
-    background-color: rgba(110, 185, 219, 0.438);
+    background-color: rgba(219, 110, 110, 0.438);
 }
 /* ======ID'S====== */
 #bodytwo{
@@ -11,7 +11,7 @@ body{
     background-color: rgb(255, 255, 255);
     border-radius: 2rem;
     border-style: solid;
-    border-color: rgb(110, 185, 219);
+    border-color: rgb(219, 134, 110);
    
 }
 #bodyfour{
@@ -19,6 +19,6 @@ body{
     background-color: rgb(255, 255, 255);
     border-radius: 2rem;
     border-style: solid;
-    border-color: rgb(110, 185, 219);
+    border-color: rgb(219, 110, 110);
  
 }

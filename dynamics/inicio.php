@@ -1,4 +1,10 @@
-
+<?php  
+session_start();
+session_destroy();
+session_start();
+unset($_SESSION["nombre"]);
+$_SESSION["var"] = 0;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +12,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>oh!myexplorer</title>
-    <link rel="stylesheet" href="./statics/styles/inicio.css">
+    <link rel="stylesheet" href="../statics/styles/inicio.css">
 </head>
 <body>
-        <form action="./dynamics/acciones.php"  method="post" target="_blank" autocomplete="on">
+        <form action="./acciones.php"  method="post" target="_self" autocomplete="on">
             <br>
             <br>
             <br>
@@ -31,8 +37,8 @@
                     <br>
                     <br>
                     <label for="casa">¿Cuál es tú casa?</label><br><br>
-                    <select>
-                        <option value="Ajolotes">Ajolotes</option>
+                    <select name="casa">
+                        <option value="Ajolotes" >Ajolotes</option>
                         <option value="Teporingos">Teporingos</option>
                         <option value="Halcones">Halcones</option>
                     </select>

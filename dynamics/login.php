@@ -1,3 +1,7 @@
+<?php
+session_start();
+if($_SESSION["var"] != 1) header("Location: ./inicio.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,48 +9,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movimientos</title>
-    <link rel="stylesheet" href="../statics/styles/movimientos.css">
+    <link rel="stylesheet" href='../statics/styles/<?=$_SESSION["casa"]?>.css'>
 </head>
 <body>
+
     <span id="bodytwo" align="center">
         <br>
+        <h1>Hola <?=$_SESSION["nombre"]?> </h1>
         <br>
         <br>
-    <?php
-        $nombre = (isset($_POST['nombre']) && $_POST["nombre"] !="")? $_POST['nombre'] : "No especifico";
-
-        if(isset($_POST['Submit']))
-
-        {
-            $accion = $_POST['accion'];
-            echo "El usuario ha elegido: <b> $accion </b>";
-            switch ($accion){
-                case "Crear";
-                        echo "<br> <br> <br> Introduce el nombre y ruta del archivo"; //mensaje de entrada
-                        ?>
-                            <form method="post" action="crear.php">
-                                <input type="text" name="name"><br>
-                                <input type="submit" name="submit" value="Submit Form"><br>
-                                <!-- otro formulario para pedir el nombre (se podría hacer en otra página o en la de crear, solo direccionando)
-                                pero ya así funciona -->
-                            </form>
-                        <?php
-                        echo "<br> <br> <br>";
-                        break;
-                        // espacio para las otras coniciones
-                case "Renombrar";
-                        echo "entró renombre";
-                        break;
-                case "Eliminar";
-                        echo "entró eliminar";
-                        break;
-            }
-        }
-
-    ?>
+   
     </span>
     
-        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <form method="post" action="./acciones.php">
             <span id="bodyfour">
                 <br>
                 <br>
@@ -68,6 +43,7 @@
     <br>
     <br>
     <br>
+    <a href="./inicio.php">salir</a>
     <!--<a href="../dynamics/viewregistro.php">Ver los registros </a>
     intento de registros que no funciono pipipi-->
 </body>
