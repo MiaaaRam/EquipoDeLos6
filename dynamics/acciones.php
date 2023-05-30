@@ -4,8 +4,13 @@ if($_SESSION["var"] == 0)
 {
     $nombre = (isset($_POST['nombre']) && $_POST["nombre"] !="")? $_POST['nombre'] : ". . .   Quien eres?";
     $_SESSION["nombre"] = $nombre;
+
     $cas = (isset($_POST['casa']) && $_POST["casa"] !="")? $_POST['casa'] : "movimientos";
     $_SESSION["casa"] = $cas;
+
+    $acciones = (isset($_POST['accion']) && $_POST["accion"] !="")? $_POST['accion'] : "accion";
+    $_SESSION["accion"] = $acciones;
+
     $_SESSION["var"] = 1;
     header("Location: ./login.php");
     
