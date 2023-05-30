@@ -14,9 +14,9 @@ if($_SESSION["var"] != 1) header("Location: ./inicio.php");
     </head>
     <body>
     
-<form TARGET='_blank' method='post' action="<?php echo $_SERVER['PHP_SELF']; ?>">
-             <fieldset>
-            <legend>Ingresa los siguientes datos para renombrar a tu archivo</legend>
+<form  TARGET='_blank' method='post' action="<?php echo $_SERVER['PHP_SELF']; ?>">
+             <fieldset class="form">
+            <legend class="legend">Ingresa los siguientes datos para renombrar a tu archivo</legend>
                     <label>Nombre actual del txt :
                         <input type='text' name='nombreviejo' id='nombreviejo'>
                    </label>

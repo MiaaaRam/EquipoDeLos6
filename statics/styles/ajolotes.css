@@ -8,6 +8,7 @@ body{
 /* ======ID'S====== */
 #bodytwo{
     display: block;
+    background-image:url(estrellas.jpg);
     background-color: rgb(255, 255, 255);
     border-radius: 2rem;
     border-style: solid;
@@ -21,4 +22,16 @@ body{
     border-style: solid;
     border-color: rgb(205, 110, 219);
  
+}
+/*****************************************/
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.legend{
+    font-family: cursive;
+    font-size: x-large;
+    color: rgb(255, 4, 171);
+}
+.form{
+    background-image:url(estrellas.jpg);
 }

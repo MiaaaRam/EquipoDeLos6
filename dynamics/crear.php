@@ -18,10 +18,10 @@ if($_SESSION["var"] != 1) header("Location: ./inicio.php");
         <br>
         <br>
 
-     <h2>         
+     <h2 class="legend">         
      Introduce el nombre 
 </h2>         
-                          <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                          <form  method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                                 <input type="text" name="name"><br>
                                 <input type="submit" name="submit" value="Submit Form"><br>
                                 <!-- otro formulario para pedir el nombre (se podría hacer en otra página o en la de crear, solo direccionando)

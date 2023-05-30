@@ -6,6 +6,9 @@
 }
 /* ==============INDEX===================================================================== */
 /* ======ID'S====== */
+body{
+    background-image:url(estrellas.jpg);
+}
 #login{
     display: block;
     background-color: rgba(110, 130, 219, 0.438);
